@@ -24,16 +24,23 @@
 
 ## 🔧 Установка и запуск
 ### 1️⃣ Копирование скрипта
+`````
 sudo cp monitor.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/monitor.sh
+`````
 
 ### 2️⃣ Установка systemd unit и timer
+`````
 sudo cp monitor.service /etc/systemd/system/
 sudo cp monitor.timer /etc/systemd/system/
 sudo systemctl daemon-reload
+`````
 
 ### 3️⃣ Активация таймера
+`````
 sudo systemctl enable --now monitor.timer
+`````
 ### 4️⃣ Проверка состояния таймера
+`````
 systemctl list-timers | grep monitor
-
+`````
