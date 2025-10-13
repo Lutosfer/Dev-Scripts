@@ -13,6 +13,7 @@
 ---
 
 ## 📂 Структура проекта
+.
 ├── monitor.sh # Bash-скрипт мониторинга
 ├── monitor.service # systemd unit
 ├── monitor.timer # systemd timer
