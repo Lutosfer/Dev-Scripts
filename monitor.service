@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitor process "test" and report status
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/monitor.sh
+Nice=10
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
+
