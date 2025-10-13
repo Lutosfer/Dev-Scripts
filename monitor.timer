@@ -4,7 +4,7 @@ Description=Run monitor.service every minute
 [Timer]
 OnBootSec=1min
 OnUnitActiveSec=1min
-Unit=process-monitor.service
+Unit=monitor.service
 
 [Install]
 WantedBy=timers.target
