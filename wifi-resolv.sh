@@ -4,7 +4,7 @@ LAST_SSID=""
 
 # Функция для обновления resolv.conf
 update_resolv() {
-    if [[ "$1" =~ Network ]]; then
+    if [[ "$1" =~ Advanced ]]; then
         NEW_NS="192.168.1.1"
     else
         NEW_NS="1.1.1.1"
