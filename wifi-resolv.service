@@ -1,0 +1,13 @@
+[Unit]
+Description=Wi-Fi Resolv.conf Updater
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/wifi-resolv.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
